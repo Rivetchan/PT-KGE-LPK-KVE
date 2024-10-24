@@ -14,6 +14,30 @@ body {
     padding: 20px; 
 }
 
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px; 
+    padding: 20px;
+}
+
+.home h1, 
+.home p {
+    font-size: 24px; 
+    margin: 10px 0; 
+}
+
+.home h1 {
+    font-weight: bold; 
+}
+
+.home p {
+    max-width: 800px; 
+}
+
 /* Header */
 header {
     display: flex;
@@ -247,6 +271,20 @@ footer p {
         padding: 10px;
     }
 
+    .home {
+        height: auto;
+        padding: 20px; 
+    }
+
+    .home h1, 
+    .home p {
+        font-size: 20px; 
+    }
+
+    .home p {
+        max-width: 600px; 
+    }
+
     nav {
         padding: 0; 
         width: 100%; 
@@ -320,6 +358,19 @@ footer p {
 @media screen and (max-width: 480px) {
     header {
         padding: 5px;
+    }
+
+    .home {
+        padding: 15px; 
+    }
+
+    .home h1 {
+        font-size: 18px; 
+    }
+
+    .home p {
+        font-size: 16px; 
+        max-width: 100%; 
     }
 
     nav ul li a {
