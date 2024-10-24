@@ -1,0 +1,350 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #333;
+    line-height: 1.5; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366; 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease; 
+}
+
+header:hover {
+    background: #00509e; 
+}
+
+header img.logo {
+    height: 50px;
+}
+
+.logo {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+/* Navigation */
+nav {
+    background: #003366;
+    text-align: center; 
+    padding: 10px 20px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    z-index: 1000; 
+    position: relative; 
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    margin-left: 50px; 
+    position: relative; 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #ffffff; 
+    font-weight: bold; 
+    font-size: 18px; 
+    padding: 12px 18px; 
+    background: #003366; 
+    border-radius: 8px; 
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: orange; 
+    background: rgba(255, 165, 0, 0.2); 
+}
+
+/* Sub-menu Styles */
+nav ul li ul {
+    display: none; 
+    position: absolute; 
+    background: #003366; 
+    padding: 10px;
+    border-radius: 5px; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    color: #ffffff; 
+    font-weight: normal;
+    font-size: 16px; 
+    display: block; 
+    padding: 8px 12px; 
+    transition: background 0.3s ease; 
+}
+
+nav ul li ul li a:hover {
+    background-color: orange;
+    color: #fff; 
+}
+
+/* Section Styles */
+section {
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px 0; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: slide-up 0.5s forwards; 
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Centering Titles */
+h1, h2, h3 {
+    text-align: center; 
+    margin: 10px 0;
+    color: #003366; 
+}
+
+/* Google Maps Container */
+.map-container {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0; 
+    width: 100%;  
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0; 
+    margin-top: 20px;
+    background-color: #003366; 
+    color: #ffffff; 
+    border-radius: 8px; 
+    transition: background 0.3s ease; 
+}
+
+footer:hover {
+    background: #004080; 
+}
+
+/* Font dalam footer */
+footer p {
+    margin: 0;
+    font-size: 20px; 
+    font-weight: 300; 
+    letter-spacing: 1px; 
+}
+
+/* Clients Scrolling */
+.clients-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    position: relative;
+    height: 70px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+
+.clients-wrapper {
+    display: inline-flex; 
+    animation: scroll 50s linear infinite; 
+}
+
+.client-text {
+    font-size: 26px; 
+    font-weight: bold; 
+    margin: 0 50px; 
+}
+
+/* Animasi scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+/* Contact Icons */
+.contact-us {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.contact-icon {
+    width: 30px; 
+    height: 30px; 
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav {
+        padding: 0; 
+        width: 100%; 
+    }
+
+    nav ul {
+        width: 100%; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    nav ul li {
+        width: 100%; 
+        margin: 0; 
+    }
+
+    nav ul li a {
+        display: block; 
+        width: 100%; 
+        padding: 12px 20px; 
+        text-align: center; 
+        font-size: 16px; 
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .clients-container {
+        height: 50px;
+    }
+
+    .clients-wrapper {
+        animation: scroll 30s linear infinite;
+    }
+
+    .client-text {
+        font-size: 20px;
+        margin: 0 30px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    header img.logo {
+        height: 40px;
+    }
+
+    .contact-us {
+        gap: 5px;
+    }
+
+    .contact-item {
+        gap: 2px;
+    }
+
+    .contact-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Extra small devices (max-width 480px) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .clients-container {
+        height: 40px;
+    }
+
+    .client-text {
+        font-size: 18px;
+    }
+
+    .contact-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
