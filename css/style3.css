@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 1200px; 
     margin: 0 auto; 
-    padding: 20px; 
+    padding: 10px;
 }
 
 .home {
@@ -21,13 +21,13 @@ body {
     align-items: center;
     text-align: center;
     height: 100px; 
-    padding: 20px;
+    padding: 10px; 
 }
 
 .home h1, 
 .home p {
     font-size: 24px; 
-    margin: 10px 0; 
+    margin: 5px 0; 
 }
 
 .home h1 {
@@ -44,7 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #003366; 
-    padding: 10px 20px; 
+    padding: 10px 10px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease; 
 }
@@ -72,9 +72,9 @@ header img.logo {
     width: 100%; 
     height: 100%; 
     background-color: rgba(0, 0, 0, 0.4); 
-  }
+}
   
-  .modal-content {
+.modal-content {
     background-color: white;
     margin: 15% auto; 
     padding: 20px;
@@ -82,21 +82,21 @@ header img.logo {
     width: 80%;
     max-height: 80vh;
     overflow-y: auto;
-  }
+}
   
-  .close {
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
   
 /* Navigation */
 nav {
@@ -118,7 +118,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 50px; 
+    margin-left: 20px; 
     position: relative; 
     transition: transform 0.3s ease; 
 }
@@ -132,7 +132,7 @@ nav ul li a {
     color: #ffffff; 
     font-weight: bold; 
     font-size: 18px; 
-    padding: 12px 18px; 
+    padding: 8px 12px; 
     background: #003366; 
     border-radius: 8px; 
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; 
@@ -180,8 +180,8 @@ nav ul li ul li a:hover {
 section {
     background: rgba(255, 255, 255, 0.9); 
     border-radius: 10px; 
-    padding: 20px; 
-    margin: 20px 0; 
+    padding: 10px; 
+    margin: 10px 0; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, opacity 0.3s ease; 
     opacity: 0;
@@ -207,21 +207,11 @@ h1, h2, h3 {
     color: #003366; 
 }
 
-/* Google Maps Container */
-.map-container {
-    display: flex;
-    justify-content: center; 
-    margin: 20px 0; 
-    width: 100%;  
-    max-width: 100%; 
-    overflow: hidden; 
-}
-
 /* Footer */
 footer {
     text-align: center;
-    padding: 25px 0; 
-    margin-top: 20px;
+    padding: 15px 0;
+    margin-top: 10px; 
     background-color: #003366; 
     color: #ffffff; 
     border-radius: 8px; 
@@ -232,36 +222,11 @@ footer:hover {
     background: #004080; 
 }
 
-/* Font dalam footer */
 footer p {
     margin: 0;
-    font-size: 20px; 
+    font-size: 18px;
     font-weight: 300; 
     letter-spacing: 1px; 
-}
-
-/* Clients Scrolling */
-.clients-container {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 10px; 
-    overflow: hidden; 
-    white-space: nowrap; 
-    position: relative;
-    height: 70px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    margin-top: 20px;
-}
-
-.clients-wrapper {
-    display: inline-flex; 
-    animation: scroll 60s linear infinite; 
-}
-
-.client-text {
-    font-size: 26px; 
-    font-weight: bold; 
-    margin: 0 50px; 
 }
 
 /* Animasi scrolling */
@@ -272,25 +237,6 @@ footer p {
     100% {
         transform: translateX(-100%); 
     }
-}
-
-/* Contact Icons */
-.contact-us {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 10px; 
-}
-
-.contact-item {
-    display: flex;
-    align-items: center; 
-    gap: 5px; 
-}
-
-.contact-icon {
-    width: 30px; 
-    height: 30px; 
 }
 
 /* Mobile Styles */
@@ -308,7 +254,7 @@ footer p {
 
     .home {
         height: auto;
-        padding: 20px; 
+        padding: 10px; 
     }
 
     .home h1, 
@@ -340,31 +286,18 @@ footer p {
     nav ul li a {
         display: block; 
         width: 100%; 
-        padding: 12px 20px; 
+        padding: 8px 10px;
         text-align: center; 
         font-size: 16px; 
     }
 
     section {
-        padding: 15px;
-        margin: 15px 0;
-    }
-
-    .clients-container {
-        height: 50px;
-    }
-
-    .clients-wrapper {
-        animation: scroll 30s linear infinite;
-    }
-
-    .client-text {
-        font-size: 20px;
-        margin: 0 30px;
+        padding: 10px;
+        margin: 10px 0;
     }
 
     footer {
-        padding: 15px 0;
+        padding: 10px 0;
     }
 
     footer p {
@@ -375,24 +308,17 @@ footer p {
         height: 40px;
     }
 
-    .contact-us {
-        gap: 5px;
-    }
-
-    .contact-item {
-        gap: 2px;
-    }
-
-    .contact-icon {
-        width: 25px;
-        height: 25px;
+    .gallery-photo {
+        max-width: 450px; 
+        height: auto;
     }
 }
 
 .gallery {
-    padding: 40px 20px;
+    padding: 30px 15px; 
     text-align: center;
     margin: 20px 0;
+    background-color: #f9f9f9;
 }
 
 .gallery h2 {
@@ -402,89 +328,49 @@ footer p {
     margin-bottom: 20px;
 }
 
+.gallery-section h3 {
+    font-size: 20px;
+    color: #003366;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-section h3:hover .popup-text {
+    display: block;
+}
+
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; 
-    padding: 0;
-    background-color: white; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 3rem;
 }
 
 .gallery-photo {
-    width: 100%;
+    width: 1000px; 
+    max-width: 800px; 
     height: auto;
     object-fit: cover;
-    background-color: white; 
-    padding: 5px; 
-    box-shadow: none; 
-    border-radius: 4px; 
-    transition: transform 0.3s ease; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-photo:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     .gallery h2 {
         font-size: 24px;
     }
+
     .gallery-container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery h2 {
-        font-size: 20px;
-    }
-    .gallery-container {
-        grid-template-columns: 1fr; /* 1 image per row on very small screens */
-    }
-}
-
-/* Extra small devices (max-width 480px) */
-@media screen and (max-width: 480px) {
-    header {
-        padding: 5px;
+        gap: 1rem;
     }
 
-    .home {
-        padding: 15px; 
-    }
-
-    .home h1 {
-        font-size: 18px; 
-    }
-
-    .home p {
-        font-size: 16px; 
-        max-width: 100%; 
-    }
-
-    nav ul li a {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    footer {
-        padding: 10px 0;
-    }
-
-    .clients-container {
-        height: 40px;
-    }
-
-    .client-text {
-        font-size: 18px;
-    }
-
-    .contact-icon {
-        width: 20px;
-        height: 20px;
+    .gallery-photo {
+        max-width: 500px; 
+        height: auto;
     }
 }
