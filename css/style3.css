@@ -347,7 +347,7 @@ footer p {
 }
 
 .gallery-photo {
-    width: 1000px; 
+    width: 100%; 
     max-width: 800px; 
     height: auto;
     object-fit: cover;
@@ -366,7 +366,7 @@ footer p {
     }
 
     .gallery-container {
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .gallery-photo {
@@ -377,7 +377,7 @@ footer p {
 
 @media (max-width: 480px) {
     .gallery h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .gallery-container {
@@ -385,7 +385,53 @@ footer p {
     }
 
     .gallery-photo {
-        max-width: 300px; 
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .gallery h2 {
+        font-size: 18px;
+    }
+
+    .gallery-container {
+        gap: 0.5rem;
+    }
+
+    .gallery-photo {
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .gallery h2 {
+        font-size: 16px;
+    }
+
+    .gallery-container {
+        gap: 0.5rem;
+    }
+
+    .gallery-photo {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1080px) {
+    .gallery h2 {
+        font-size: 26px;
+    }
+
+    .gallery-container {
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .gallery-photo {
+        max-width: 600px;
         height: auto;
     }
 }
