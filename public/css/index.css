@@ -267,3 +267,44 @@ a:hover, button:hover {
         padding: 10px;
     }
 }
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        background-color: #333;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    nav ul li ul {
+        position: static;
+        background-color: #444;
+    }
+
+    nav ul li ul li a {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+}
