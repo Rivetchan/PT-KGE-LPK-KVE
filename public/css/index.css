@@ -268,6 +268,88 @@ a:hover, button:hover {
     }
 }
 
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: block;
+        width: 100%; 
+        text-align: center;
+        background-color: #333;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%; 
+    }
+
+    nav ul li a {
+        padding: 10px;
+        width: 100%; 
+    }
+
+    nav ul li ul {
+        position: static; 
+        min-width: auto;
+        background-color: #444;
+        width: 100%; 
+    }
+
+    nav ul li ul li a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1080px) and (min-width: 769px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: auto;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between; 
+        width: auto;
+        text-align: left; 
+        background-color: #333;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    nav ul li ul {
+        position: static;
+        background-color: #444;
+    }
+
+    nav ul li ul li a {
+        padding: 10px;
+    }
+}
+
 @media (max-width: 1440px) and (min-width: 1024px) {
     header {
         flex-direction: row;
@@ -304,7 +386,7 @@ a:hover, button:hover {
     }
 
     .container {
-        max-width: 90%;
+        max-width: 90%; 
         margin: 1rem auto;
     }
 }
