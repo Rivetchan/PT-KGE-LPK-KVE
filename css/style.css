@@ -426,6 +426,13 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+    header {
+        padding: 5px;
+        max-width: 100%;
+        align-items: center;
+    }
+
     .gallery h2 {
         font-size: 24px;
     }
@@ -435,11 +442,17 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
+    header {
+        padding: 5px;
+        align-items: center;
+    }
+
     .gallery h2 {
         font-size: 20px;
     }
     .gallery-container {
-        grid-template-columns: 1fr; /* 1 image per row on very small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
@@ -447,6 +460,7 @@ footer p {
 @media screen and (max-width: 480px) {
     header {
         padding: 5px;
+        align-items: center;
     }
 
     .home {

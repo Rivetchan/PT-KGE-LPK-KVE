@@ -451,6 +451,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+    header {
+        padding: 5px;
+        align-items: center;
+    }
+
     .gallery h2 {
         font-size: 24px;
     }
@@ -460,6 +466,12 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
+    header {
+        padding: 5px;
+        align-items: center;
+    }
+
     .gallery h2 {
         font-size: 20px;
     }
@@ -470,8 +482,14 @@ footer p {
 
 /* Extra small devices (max-width 480px) */
 @media screen and (max-width: 480px) {
+    
     header {
         padding: 5px;
+        align-items: center;
+    }
+
+    .logo{
+        align-items: center;
     }
 
     .home {
